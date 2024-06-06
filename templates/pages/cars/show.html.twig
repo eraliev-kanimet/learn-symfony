@@ -1,7 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Владельцы</h1>
+    <h1>История машины {{ car.number }}: {{ car.brand }} {{ car.model }}</h1>
+    <br>
+    <hr>
+    <h4>Владельцы</h4>
     <table>
         <thead>
         <tr>
