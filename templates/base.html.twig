@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <title>Hello world!</title>
+    <style>
+        .form {
+            li {
+                color: rgba(255, 0, 0, 0.6);
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="container">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ path('cars') }}">Cars</a></li>
+            <li><a href="{{ path('register') }}">Register</a></li>
+            <li><a href="{{ path('re_register') }}">Re Register</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    {% block body %}{% endblock %}
+</main>
+</body>
+</html>
